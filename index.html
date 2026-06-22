@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen: El Origen de la Danza</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .instrucciones {
+            background: #e8f4f8;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .seccion-titulo {
+            background: #34495e;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+        .pregunta {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .pregunta p {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .opciones label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #219653;
+        }
+        .feedback {
+            margin-top: 10px;
+            padding: 10px;
+            background: #fdf2e9;
+            border-left: 5px solid #e67e22;
+            display: none;
+            font-size: 0.9em;
+        }
+        #resultado {
+            margin-top: 30px;
+            padding: 20px;
+            background: #eaf2f8;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Examen de Historia de la Danza: "El Origen"</h1>
+    <div class="instrucciones">
+        <strong>Profesor de Danza (Nivel Preparatoria)</strong><br>
+        Responde con atención cada uno de los siguientes 20 reactivos. Valor total: 100 puntos (5 puntos cada uno). Al finalizar, haz clic en "Enviar Examen" para obtener tu calificación y revisar la retroalimentación de tus respuestas incorrectas.
+    </div>
+
+    <form id="quizForm">
+        <div class="seccion-titulo">Parte I: Opción Múltiple (Selecciona la respuesta correcta)</div>
+        <br>
+
+        <div class="pregunta" id="p1">
+            <p>1. ¿En qué período de la historia de la humanidad se estima que la danza surgió originalmente como una forma de comunicación y ritual?</p>
+            <div class="opciones">
+                <label><input type="radio" name="q1" value="A"> A) Edad Media</label>
+                <label><input type="radio" name="q1" value="B"> B) Prehistoria</label>
+                <label><input type="radio" name="q1" value="C"> C) Renacimiento</label>
+                <label><input type="radio" name="q1" value="D"> D) Edad Moderna</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: La danza nació en la Prehistoria como una necesidad vital y biológica de comunicación antes del lenguaje hablado formal.</div>
+        </div>
+
+        <div class="pregunta" id="p2">
+            <p>2. ¿Cuál era el propósito principal de las danzas rituales en las tribus primitivas?</p>
+            <div class="opciones">
+                <label><input type="radio" name="q2" value="A"> A) Entretenimiento para la nobleza</label>
+                <label><input type="radio" name="q2" value="B"> B) Conectarse con fuerzas espirituales, pedir por la caza y la fertilidad</label>
+                <label><input type="radio" name="q2" value="C"> C) Competir para ver quién era el mejor bailarín</label>
+                <label><input type="radio" name="q2" value="D"> D) Estudiar la anatomía del cuerpo humano</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: En el origen, la danza tenía un fin puramente mágico-religioso ligado a la supervivencia (caza, clima, fertilidad).</div>
+        </div>
+
+        <div class="pregunta" id="p3">
+            <p>3. ¿Qué civilización antigua consideraba que la danza era de origen divino y la utilizaba en honor a dioses como Osiris e Isis?</p>
+            <div class="opciones">
+                <label><input type="radio" name="q3" value="A"> A) Egipcia</label>
+                <label><input type="radio" name="q3" value="B"> B) Romana</label>
+                <label><input type="radio" name="q3" value="C"> C) Mesopotámica</label>
+                <label><input type="radio" name="q3" value="D"> D) Azteca</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Los egipcios incorporaron la danza de forma sagrada en los templos para venerar a Osiris, representando la muerte y la reencarnación.</div>
+        </div>
+
+        <div class="pregunta" id="p4">
+            <p>4. ¿Qué filósofo griego afirmaba que la danza era un reflejo de las virtudes del alma y que un buen ciudadano debía saber bailar?</p>
+            <div class="opciones">
+                <label><input type="radio" name="q4" value="A"> A) Aristóteles</label>
+                <label><input type="radio" name="q4" value="B"> B) Platón</label>
+                <label><input type="radio" name="q4" value="C"> C) Sócrates</label>
+                <label><input type="radio" name="q4" value="D"> D) Pitágoras</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Platón destacaba el valor educativo de la danza en las leyes, ligando el buen movimiento corporal al orden del alma y del ciudadano.</div>
+        </div>
+
+        <div class="pregunta" id="p5">
+            <p>5. En la antigua Grecia, ¿quién era la musa protectora y deidad de la danza y la música coral?</p>
+            <div class="opciones">
+                <label><input type="radio" name="q5" value="A"> A) Calíope</label>
+                <label><input type="radio" name="q5" value="B"> B) Melpómene</label>
+                <label><input type="radio" name="q5" value="C"> C) Terpsícore</label>
+                <label><input type="radio" name="q5" value="D"> D) Talía</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Terpsícore es, dentro de la mitología griega, la musa consagrada formalmente a la danza.</div>
+        </div>
+
+        <div class="pregunta" id="p6">
+            <p>6. ¿Qué tipo de danza primitiva se realizaba alrededor de un fuego u objeto sagrado imitando los movimientos de los animales?</p>
+            <div class="opciones">
+                <label><input type="radio" name="q6" value="A"> A) Danza de Salón</label>
+                <label><input type="radio" name="q6" value="B"> B) Danza Circular o Totémica</label>
+                <label><input type="radio" name="q6" value="C"> C) Danza Académica</label>
+                <label><input type="radio" name="q6" value="D"> D) Performance Contemporáneo</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: El círculo es la formación dancística más antigua y primitiva; representaba la cohesión de la tribu en torno a un elemento totémico.</div>
+        </div>
+
+        <div class="pregunta" id="p7">
+            <p>7. Hacia el final de la República e Imperio Romano, la danza evolucionó hacia un género teatral mudo muy popular conocido como:</p>
+            <div class="opciones">
+                <label><input type="radio" name="q7" value="A"> A) Tragedia lírica</label>
+                <label><input type="radio" name="q7" value="B"> B) Coro griego</label>
+                <label><input type="radio" name="q7" value="C"> C) Pantomima</label>
+                <label><input type="radio" name="q7" value="D"> D) Ballet cortesano</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: En Roma, debido a la diversidad lingüística del Imperio, triunfó la pantomima, donde el actor/bailarín expresaba historias solo con el gesto y el cuerpo.</div>
+        </div>
+
+        <div class="seccion-titulo">Parte II: Completar la oración (Escribe la palabra correcta en minúsculas)</div>
+        <br>
+
+        <div class="pregunta" id="p8">
+            <p>8. El elemento dancístico primitivo que imita las acciones de la naturaleza o animales se conoce como danza de imitación o <input type="text" id="q8" placeholder="Tu respuesta aquí">.</p>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: La respuesta correcta es <strong>mímesis</strong> (o mimética). El hombre prehistórico imitaba su entorno a través del cuerpo.</div>
+        </div>
+
+        <div class="pregunta" id="p9">
+            <p>9. Las principales evidencias arqueológicas sobre el origen de la danza se encuentran en las pinturas <input type="text" id="q9" placeholder="Tu respuesta aquí"> dentro de las cuevas.</p>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: La respuesta correcta es <strong>rupestres</strong>. En ellas quedaron plasmadas las siluetas humanas en actitud de danza.</div>
+        </div>
+
+        <div class="pregunta" id="p10">
+            <p>10. En el origen de la danza, el instrumento musical principal y primigenio fue el propio cuerpo humano a través de las <input type="text" id="id10" placeholder="Tu respuesta aquí"> y las pisadas fuertes.</p>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: La respuesta correcta es <strong>palmas</strong>. La percusión corporal precedió a los instrumentos de madera o piel.</div>
+        </div>
+
+        <div class="pregunta" id="p11">
+            <p>11. En la cultura de la India antigua, el dios que destruye y recrea el universo a través de su danza cósmica se llama <input type="text" id="q11" placeholder="Tu respuesta aquí">.</p>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: La respuesta correcta es <strong>shiva</strong> (Shiva Nataraja). Su danza representa el ciclo continuo de la vida.</div>
+        </div>
+
+        <div class="pregunta" id="p12">
+            <p>12. Las danzas dedicadas al dios griego del vino, la fertilidad y el éxtasis se denominaban danzas <input type="text" id="q12" placeholder="Tu respuesta aquí">.</p>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: La respuesta correcta es <strong>dionisíacas</strong> (proviene del dios Dionisio).</div>
+        </div>
+
+        <div class="pregunta" id="p13">
+            <p>13. Al líder o guía espiritual de la tribu que utilizaba el trance y la danza para curar enfermos se le llamaba <input type="text" id="q13" placeholder="Tu respuesta aquí">.</p>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: La respuesta correcta es <strong>chamán</strong>. El chamán usaba el ritmo repetitivo para entrar en estados alterados de conciencia.</div>
+        </div>
+
+        <div class="pregunta" id="p14">
+            <p>14. El tratado más antiguo y completo sobre las artes escénicas y la danza originario de la India se conoce como el <input type="text" id="q14" placeholder="Tu respuesta aquí"> Shastra.</p>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: La respuesta correcta es <strong>natya</strong>. El Natya Shastra es la biblia de la danza clásica de la India.</div>
+        </div>
+
+        <div class="seccion-titulo">Parte III: Verdadero o Falso</div>
+        <br>
+
+        <div class="pregunta" id="p15">
+            <p>15. En sus orígenes prehistóricos, la danza tenía un propósito principalmente estético, es decir, se bailaba para que el movimiento se viera bonito ante un público.</p>
+            <div class="opciones">
+                <label><input type="radio" name="q15" value="V"> Verdadero</label>
+                <label><input type="radio" name="q15" value="F"> Falso</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Falso. El fin estético o de entretenimiento surgió miles de años después. En sus inicios era ritual, utilitario y mágico.</div>
+        </div>
+
+        <div class="pregunta" id="p16">
+            <p>16. En la antigua Grecia, la danza formaba parte fundamental de la educación física y militar de los jóvenes griegos (por ejemplo, en Esparta).</p>
+            <div class="opciones">
+                <label><input type="radio" name="q15_2" value="V"> Verdadero</label>
+                <label><input type="radio" name="q15_2" value="F"> Falso</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Verdadero. La danza Pírrica era una danza armada utilizada por los espartanos para entrenar la agilidad en el combate.</div>
+        </div>
+
+        <div class="pregunta" id="p17">
+            <p>17. Con la llegada del Imperio Romano y su expansión, la danza sagrada aumentó su prestigio en los templos cristianos primitivos y nunca fue perseguida.</p>
+            <div class="opciones">
+                <label><input type="radio" name="q17" value="V"> Verdadero</label>
+                <label><input type="radio" name="q17" value="F"> Falso</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Falso. Al final del imperio y durante la transición a la Edad Media, las autoridades eclesiásticas prohibieron y rechazaron la danza por considerarla pagana y carnal.</div>
+        </div>
+
+        <div class="pregunta" id="p18">
+            <p>18. Las pinturas de la Cueva de El Castillo o de Cogul en España muestran figuras que los arqueólogos interpretan como mujeres danzando en comunidad.</p>
+            <div class="opciones">
+                <label><input type="radio" name="q18" value="V"> Verdadero</label>
+                <label><input type="radio" name="q18" value="F"> Falso</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Verdadero. Las "Danzas del Cogul" son famosas por representar de las primeras coreografías colectivas femeninas plasmadas en piedra.</div>
+        </div>
+
+        <div class="pregunta" id="p19">
+            <p>19. El ritmo es el único elemento que comparte el origen de la danza con el pulso cardíaco del ser humano.</p>
+            <div class="opciones">
+                <label><input type="radio" name="q19" value="V"> Verdadero</label>
+                <label><input type="radio" name="q19" value="F"> Falso</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Verdadero. El origen biológico del ritmo dancístico está íntimamente ligado a los latidos del corazón y a la respiración del propio cuerpo.</div>
+        </div>
+
+        <div class="pregunta" id="p20">
+            <p>20. Los antiguos sabios afirmaban que la danza nació al mismo tiempo que el universo, conectando los movimientos de los astros con la expresión humana.</p>
+            <div class="opciones">
+                <label><input type="radio" name="q20" value="V"> Verdadero</label>
+                <label><input type="radio" name="q20" value="F"> Falso</label>
+            </div>
+            <div class="feedback"><strong>Incorrecto.</strong> Retroalimentación: Verdadero. Filósofos como Luciano de Samosata mencionaban que la danza nació con el cosmos en el ordenado movimiento de las estrellas (danza estelar).</div>
+        </div>
+
+        <button type="button" onclick="evaluarExamen()">Enviar Examen</button>
+    </form>
+
+    <div id="resultado"></div>
+</div>
+
+<script>
+function evaluarExamen() {
+    let nota = 0;
+    const totalPreguntas = 20;
+    const puntosPorPregunta = 5;
+
+    // Respuestas correctas
+    const respuestasCorrectas = {
+        q1: "B",
+        q2: "B",
+        q3: "A",
+        q4: "B",
+        q5: "C",
+        q6: "B",
+        q7: "C",
+        q8: ["mimesis", "mímesis", "mimética", "mimetica"],
+        q9: ["rupestres", "rupestre"],
+        id10: ["palmas", "palmadas"],
+        q11: ["shiva", "siva"],
+        q12: ["dionisíacas", "dionisiacas", "dionisiacas"],
+        q13: ["chaman", "chamán"],
+        q14: ["natya"],
+        q15: "F",
+        q15_2: "V",
+        q17: "F",
+        q18: "V",
+        q19: "V",
+        q20: "V"
+    };
+
+    // Ocultar todas las retroalimentaciones previas
+    const feedbacks = document.querySelectorAll('.feedback');
+    feedbacks.forEach(f => f.style.display = 'none');
+
+    // 1. Evaluar Opción Múltiple
+    for (let i = 1; i <= 7; i++) {
+        const opcionSelected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (opcionSelected && opcionSelected.value === respuestasCorrectas[`q${i}`]) {
+            nota += puntosPorPregunta;
+        } else {
+            document.querySelector(`#p${i} .feedback`).style.display = 'block';
+        }
+    }
+
+    // 2. Evaluar Completar Oración (se limpia texto para evitar fallos por espacios)
+    const inputsCompletar = ["q8", "q9", "id10", "q11", "q12", "q13", "q14"];
+    inputsCompletar.forEach(id => {
+        const userValue = document.getElementById(id).value.trim().toLowerCase();
+        const pParentId = document.getElementById(id).closest('.pregunta').id;
+        
+        if (respuestasCorrectas[id].includes(userValue) && userValue !== "") {
+            nota += puntosPorPregunta;
+        } else {
+            document.querySelector(`#${pParentId} .feedback`).style.display = 'block';
+        }
+    });
+
+    // 3. Evaluar Verdadero o Falso
+    const vfNames = ["q15", "q15_2", "q17", "q18", "q19", "q20"];
+    const pVfIds = ["p15", "p16", "p17", "p18", "p19", "p20"];
+
+    vfNames.forEach((name, index) => {
+        const opcionSelected = document.querySelector(`input[name="${name}"]:checked`);
+        if (opcionSelected && opcionSelected.value === respuestasCorrectas[name]) {
+            nota += puntosPorPregunta;
+        } else {
+            document.querySelector(`#${pVfIds[index]} .feedback`).style.display = 'block';
+        }
+    });
+
+    // Mostrar el resultado final
+    const divResultado = document.getElementById('resultado');
+    divResultado.style.display = 'block';
+    divResultado.innerHTML = `Tu Calificación Final es: <span style="color: ${nota >= 60 ? '#27ae60' : '#c0392b'};">${nota} / 100</span>`;
+    
+    // Auto-scrollear al resultado final
+    divResultado.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
